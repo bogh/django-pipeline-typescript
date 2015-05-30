@@ -8,7 +8,7 @@ setup(
   author='Bogdan I. Bursuc',
   author_email='bogdanbursuc86@gmail.com',
   url='https://github.com/Bogh/django-pipeline-typescript',  # use the URL to the github repo
-  # download_url='https://github.com/peterldowns/mypackage/tarball/0.1',  # I'll explain this in a second
+  download_url='https://github.com/Bogh/django-pipeline-typescript/tarball/0.1',  # I'll explain this in a second
   keywords=['pipeline', 'assets', 'typescript'],  # arbitrary keywords
   classifiers=[
     "Programming Language :: Python :: 2.7",
