@@ -22,10 +22,11 @@ class TypescriptCompiler(SubProcessCompiler):
         return filename.endswith('.ts')
 
     def compile_file(self, infile, outfile, outdated=False, force=False):
-        # Redirect output because Typescript compiler outputs errors to stdout
-        command = "{command} {arguments} -out {outfile} {infile} 1>&2".format(
-            command=get_setting('PIPELINE_TYPESCRIPT_BINARY'),
-            arguments=get_setting('PIPELINE_TYPESCRIPT_ARGUMENTS'),
-            infile=infile,
-            outfile=outfile)
+        command = (
+            get_setting('PIPELINE_TYPESCRIPT_BINARY'),
+            get_setting('PIPELINE_TYPESCRIPT_ARGUMENTS'),
+            '-out',
+            outfile,
+            infile
+        )
         return self.execute_command(command)
