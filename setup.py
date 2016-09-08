@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name='django-pipeline-typescript',
   packages=['pipeline_typescript'],
-  version='0.2',
+  version='0.3',
   description='Django Pipeline Compiler for Typescript',
   author='Bogdan I. Bursuc',
   author_email='bogdanbursuc86@gmail.com',
@@ -17,6 +17,6 @@ setup(
     "Intended Audience :: Developers",
   ],
   install_requires=[
-    'django_pipeline>=1.4.0'
+    'django_pipeline>=1.6.0'
   ]
 )
